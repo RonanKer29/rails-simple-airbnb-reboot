@@ -1,0 +1,47 @@
+/* General styling for the container */
+.card-container-flat {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Styling for each card */
+.card-product-infos {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effects for the cards */
+.card-product-infos:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the card image */
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Styling for the card title */
+.card-product-infos h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Styling for the card address */
+.card-product-infos p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 0;
+}
