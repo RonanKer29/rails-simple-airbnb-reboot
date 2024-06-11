@@ -1,4 +1,15 @@
 /* General styling for the container */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
 .card-container-flat {
   display: flex;
   flex-wrap: wrap;
@@ -44,4 +55,40 @@
   color: #666;
   font-size: 1em;
   margin-bottom: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.card-person-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.flat-info {
+  padding: 10px;
+  background-color: rgb(239, 243, 239);
+}
+
+.more-info {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.more-info a {
+  text-decoration: none;
+  color: #8d8585;
+
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(229, 229, 241);
 }

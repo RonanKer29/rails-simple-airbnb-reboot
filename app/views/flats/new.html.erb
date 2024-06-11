@@ -1,0 +1,35 @@
+<div class="add-flat-container">
+  <h1>add a new flat</h1>
+  <%= form_with(model: @flat, local: true) do |form| %>
+    <div class="field">
+      <%= form.label :name, "Name *" %>
+      <%= form.text_field :name, required: true %>
+    </div>
+    <div class="field">
+      <%= form.label :address, "Address" %>
+      <%= form.text_field :address %>
+    </div>
+    <div class="field">
+      <%= form.label :picture_url, "Picture url" %>
+      <%= form.text_field :picture_url %>
+    </div>
+    <div class="field">
+      <%= form.label :description, "Description" %>
+      <%= form.text_area :description %>
+    </div>
+    <div class="field">
+      <%= form.label :price_per_night, "Price per night" %>
+      <%= form.number_field :price_per_night %>
+    </div>
+    <div class="field">
+      <%= form.label :number_of_guests, "Number of guests" %>
+      <%= form.number_field :number_of_guests %>
+    </div>
+    <div class="actions">
+      <%= form.submit "Create Flat", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+  <div class="back-to-home-page">  <%= link_to "Back to all flats", flats_path, class: 'btn btn-primary'
+ %>
+  </div>
+</div>

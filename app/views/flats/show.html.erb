@@ -1,1 +1,12 @@
-<h1>show</h1>
+<h1><%= @flat.name %></h1>
+<p><strong>Address:</strong> <%= @flat.address %></p>
+<p><strong>Description:</strong> <%= @flat.description %></p>
+<p><strong>Price per night:</strong> <%= @flat.price_per_night %></p>
+<p><strong>Number of guests:</strong> <%= @flat.number_of_guests %></p>
+<% if @flat.image_url.present? %>
+  <div>
+    <strong>Picture:</strong>
+    <img src="<%= @flat.image_url %>" alt="<%= @flat.name %>">
+  </div>
+<% end %>
+<%= link_to 'Back to Flats', flats_path, class: 'btn btn-primary' %>
